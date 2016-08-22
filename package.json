@@ -3,6 +3,9 @@
   "version": "0.1.1",
   "description": "Create beautiful charts with one line in React",
   "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
   "license": "MIT",
   "peerDependencies": {
     "react": "*",
@@ -12,9 +15,11 @@
   "authors": [
     "ankane"
   ],
-  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/ankane/react-chartkick"
+  },
+  "devDependencies": {
+    "webpack": "^1.13.2"
   }
 }

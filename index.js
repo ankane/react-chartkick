@@ -1,3 +1,11 @@
+/*
+ * React Chartkick
+ * Create beautiful charts with one line in React
+ * https://github.com/ankane/react-chartkick
+ * v0.1.1
+ * MIT License
+ */
+
 var React = require("react")
 var Chartkick = require("chartkick")
 var chartId = 1

@@ -197,6 +197,14 @@ And add
 window.Highcharts = require('highcharts');
 ```
 
+### Without NPM
+
+```html
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.1/Chart.bundle.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chartkick/2.0.1/chartkick.js"></script>
+<script src="dist/react-chartkick.js"></script>
+```
+
 ## Contributing
 
 Everyone is encouraged to help improve this project. Here are a few ways you can help:
