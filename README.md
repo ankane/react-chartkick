@@ -47,7 +47,7 @@ Scatter chart
 Geo chart - *Google Charts*
 
 ```jsx
-<GeoChart data={[["United States",44],["Germany",23],["Brazil",22]]} />
+<GeoChart data={[["United States", 44],["Germany", 23],["Brazil", 22]]} />
 ```
 
 Timeline - *Google Charts*
@@ -131,6 +131,21 @@ You can pass options directly to the charting library with:
 ```
 
 See the documentation for [Google Charts](https://developers.google.com/chart/interactive/docs/gallery), [Highcharts](http://api.highcharts.com/highcharts), and [Chart.js](http://www.chartjs.org/docs/) for more info.
+
+### Data
+
+Pass data as an array or object
+
+```jsx
+<PieChart data={{"Blueberry": 44, "Strawberry": 23}} />
+<PieChart data={[["Blueberry", 44],["Strawberry", 23]]} />
+```
+
+Times can be a `Date`, a timestamp, or a string (strings are parsed)
+
+```jsx
+<LineChart data={[[new Date(), 5],[1368174456, 4],["2013-05-07 00:00:00 UTC", 7]]} />
+```
 
 ## Installation
 
