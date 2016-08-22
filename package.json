@@ -1,6 +1,6 @@
 {
   "name": "react-chartkick",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Create beautiful charts with one line in React",
   "main": "index.js",
   "scripts": {
