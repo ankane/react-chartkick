@@ -56,6 +56,28 @@ Timeline - *Google Charts*
 <Timeline data={[["Washington", "1789-04-29", "1797-03-03"],["Adams", "1797-03-03", "1801-03-03"]]} />
 ```
 
+Multiple series
+
+```jsx
+data = [
+  {"name":"Workout", "data": {"2013-02-10 00:00:00 -0800": 3, "2013-02-17 00:00:00 -0800": 4}},
+  {"name":"Call parents", "data": {"2013-02-10 00:00:00 -0800": 5, "2013-02-17 00:00:00 -0800": 3}}
+];
+
+// and
+<LineChart data={data} />
+```
+
+### Say Goodbye To Timeouts
+
+Make your pages load super fast and stop worrying about timeouts. Give each chart its own endpoint.
+
+```jsx
+<LineChart data="/stocks" />
+```
+
+**Note:** This feature requires [jQuery](http://jquery.com/) or [Zepto](http://zeptojs.com/) at the moment.
+
 ### Options
 
 Id, width, and height
