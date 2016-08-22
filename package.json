@@ -1,7 +1,7 @@
 {
   "name": "react-chartkick",
-  "version": "0.1.0",
-  "description": "Create beautiful Javascript charts with minimal code",
+  "version": "0.1.1",
+  "description": "Create beautiful charts with one line in React",
   "main": "index.js",
   "license": "MIT",
   "peerDependencies": {
