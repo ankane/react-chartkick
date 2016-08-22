@@ -58,10 +58,10 @@ Timeline - *Google Charts*
 
 ### Options
 
-Width and height
+Id, width, and height
 
 ```jsx
-<LineChart data={data} width="800px" height="500px" />
+<LineChart data={data} id="users-chart" width="800px" height="500px" />
 ```
 
 Min and max values
