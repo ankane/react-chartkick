@@ -17,19 +17,19 @@ Line chart
 Pie chart
 
 ```jsx
-<PieChart data={[["Blueberry", 44],["Strawberry", 23]]} />
+<PieChart data={[["Blueberry", 44], ["Strawberry", 23]]} />
 ```
 
 Column chart
 
 ```jsx
-<ColumnChart data={[["Sun", 32],["Mon", 46],["Tue", 28]]} />
+<ColumnChart data={[["Sun", 32], ["Mon", 46], ["Tue", 28]]} />
 ```
 
 Bar chart
 
 ```jsx
-<BarChart data={[["Work", 32],["Play", 1492]]} />
+<BarChart data={[["Work", 32], ["Play", 1492]]} />
 ```
 
 Area chart
@@ -47,7 +47,7 @@ Scatter chart
 Geo chart - *Google Charts*
 
 ```jsx
-<GeoChart data={[["United States", 44],["Germany", 23],["Brazil", 22]]} />
+<GeoChart data={[["United States", 44], ["Germany", 23], ["Brazil", 22]]} />
 ```
 
 Timeline - *Google Charts*
@@ -138,13 +138,13 @@ Pass data as an array or object
 
 ```jsx
 <PieChart data={{"Blueberry": 44, "Strawberry": 23}} />
-<PieChart data={[["Blueberry", 44],["Strawberry", 23]]} />
+<PieChart data={[["Blueberry", 44], ["Strawberry", 23]]} />
 ```
 
 Times can be a `Date`, a timestamp, or a string (strings are parsed)
 
 ```jsx
-<LineChart data={[[new Date(), 5],[1368174456, 4],["2013-05-07 00:00:00 UTC", 7]]} />
+<LineChart data={[[new Date(), 5], [1368174456, 4], ["2013-05-07 00:00:00 UTC", 7]]} />
 ```
 
 ## Installation
