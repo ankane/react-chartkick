@@ -1,0 +1,20 @@
+{
+  "name": "react-chartkick",
+  "version": "0.1.0",
+  "description": "Create beautiful Javascript charts with minimal code",
+  "main": "index.js",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "*",
+    "react-dom": "*",
+    "chartkick": "*"
+  },
+  "authors": [
+    "ankane"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ankane/react-chartkick"
+  }
+}
