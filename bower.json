@@ -2,8 +2,19 @@
   "name": "react-chartkick",
   "version": "0.1.1",
   "main": "dist/react-chartkick.js",
-  "ignore": [],
+  "ignore": [
+    "**/.*"
+  ],
   "dependencies": {
     "chartkick": "^2.0.1"
-  }
+  },
+  "homepage": "https://github.com/ankane/react-chartkick",
+  "authors": [
+    "Andrew Kane <andrew@chartkick.com>"
+  ],
+  "description": "Create beautiful charts with one line in React",
+  "keywords": [
+    "charts"
+  ],
+  "license": "MIT"
 }
