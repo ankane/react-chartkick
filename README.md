@@ -83,13 +83,13 @@ Make your pages load super fast and stop worrying about timeouts. Give each char
 Id, width, and height
 
 ```jsx
-<LineChart data={data} id="users-chart" width="800px" height="500px" />
+<LineChart id="users-chart" width="800px" height="500px" />
 ```
 
 Min and max values
 
 ```jsx
-<LineChart data={data} min={1000} max={5000} />
+<LineChart min={1000} max={5000} />
 ```
 
 `min` defaults to 0 for charts with non-negative values. Use `null` to let the charting library decide.
@@ -97,37 +97,37 @@ Min and max values
 Colors
 
 ```jsx
-<LineChart data={data} colors={["pink", "#999"]} />
+<LineChart colors={["pink", "#999"]} />
 ```
 
 Stacked columns or bars
 
 ```jsx
-<ColumnChart data={data} stacked={true} />
+<ColumnChart stacked={true} />
 ```
 
 Discrete axis
 
 ```jsx
-<LineChart data={data} discrete={true} />
+<LineChart discrete={true} />
 ```
 
 Label (for single series)
 
 ```jsx
-<LineChart data={data} label="Value" />
+<LineChart label="Value" />
 ```
 
 Axis titles
 
 ```jsx
-<LineChart data={data} xtitle="Time" ytitle="Population" />
+<LineChart xtitle="Time" ytitle="Population" />
 ```
 
 You can pass options directly to the charting library with:
 
 ```jsx
-<LineChart data={data} library={{backgroundColor: "#eee"}} />
+<LineChart library={{backgroundColor: "#eee"}} />
 ```
 
 See the documentation for [Google Charts](https://developers.google.com/chart/interactive/docs/gallery), [Highcharts](http://api.highcharts.com/highcharts), and [Chart.js](http://www.chartjs.org/docs/) for more info.
