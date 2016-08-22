@@ -143,7 +143,7 @@ window.Chart = require('chart.js');
 Include
 
 ```html
-<script src="//www.google.com/jsapi"></script>
+<script src="https://www.google.com/jsapi"></script>
 ```
 
 ### Highcharts
