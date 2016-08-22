@@ -17,6 +17,7 @@ var createComponent = function(chartType) {
       var props = this.props
       var style = {
         height: props.height || "300px",
+        lineHeight: props.height || "300px",
         width: props.width || "100%",
         textAlign: "center",
         color: "#999",
