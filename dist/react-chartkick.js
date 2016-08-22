@@ -59,7 +59,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * Create beautiful charts with one line in React
 	 * https://github.com/ankane/react-chartkick
 	 * v0.1.1
-	 * MIT License
+	 * @license MIT
 	 */
 
 	var React = __webpack_require__(1)
