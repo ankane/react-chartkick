@@ -2,5 +2,8 @@
   "name": "react-chartkick",
   "version": "0.1.1",
   "main": "dist/react-chartkick.js",
-  "ignore": []
+  "ignore": [],
+  "dependencies": {
+    "chartkick": "^2.0.1"
+  }
 }
