@@ -68,15 +68,23 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var createComponent = function(chartType) {
 	  return React.createClass({
-	    componentDidMount: function() {
-	      var data = this.props.data
+	    newChartType: function(props) {
+	      var data = props.data
 	      var options = {}
-	      for (var prop in this.props) {
-	        if (this.props.hasOwnProperty(prop) && prop !== "data" && prop !== "id" && prop !== "height" && prop !== "width") {
-	          options[prop] = this.props[prop]
+	      for (var prop in props) {
+	        if (props.hasOwnProperty(prop) && prop !== "data" && prop !== "id" && prop !== "height" && prop !== "width") {
+	          options[prop] = props[prop]
 	        }
 	      }
 	      new chartType(this.chartId, data, options)
+	    },
+	    componentDidMount: function() {
+	      this.newChartType(this.props)
+	    },
+	    componentWillUpdate: function(nextProps) {
+	      if (this.props.data !== nextProps.data) {
+	        this.newChartType(nextProps)
+	      }
 	    },
 	    render: function() {
 	      var props = this.props
