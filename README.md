@@ -76,8 +76,6 @@ Make your pages load super fast and stop worrying about timeouts. Give each char
 <LineChart data="/stocks" />
 ```
 
-**Note:** This feature requires [jQuery](http://jquery.com/) or [Zepto](http://zeptojs.com/) at the moment.
-
 ### Options
 
 Id, width, and height
