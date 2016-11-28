@@ -200,13 +200,13 @@ window.Highcharts = require('highcharts');
 Include the charting library
 
 ```html
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.1/Chart.bundle.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.js"></script>
 ```
 
 And then the Chartkick libraries
 
 ```html
-<script src="https://cdnjs.cloudflare.com/ajax/libs/chartkick/2.0.1/chartkick.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chartkick/2.1.0/chartkick.js"></script>
 <script src="dist/react-chartkick.js"></script>
 ```
 
