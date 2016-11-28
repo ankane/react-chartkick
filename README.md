@@ -178,7 +178,7 @@ window.Chart = require('chart.js');
 Include
 
 ```html
-<script src="https://www.google.com/jsapi"></script>
+<script src="https://www.gstatic.com/charts/loader.js"></script>
 ```
 
 ### Highcharts
