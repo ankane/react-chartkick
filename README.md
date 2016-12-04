@@ -206,7 +206,7 @@ Include the charting library
 And then the Chartkick libraries
 
 ```html
-<script src="https://cdnjs.cloudflare.com/ajax/libs/chartkick/2.1.0/chartkick.js"></script>
+<script src="https://unpkg.com/chartkick@2.2.0"></script>
 <script src="dist/react-chartkick.js"></script>
 ```
 
