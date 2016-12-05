@@ -175,6 +175,24 @@ Times can be a `Date`, a timestamp, or a string (strings are parsed)
 <LineChart data={[[new Date(), 5], [1368174456, 4], ["2013-05-07 00:00:00 UTC", 7]]} />
 ```
 
+### Download Charts
+
+*Chart.js only*
+
+Give users the ability to download charts. It all happens in the browser - no server-side code needed.
+
+```jsx
+<LineChart download={true} />
+```
+
+Set the filename
+
+```jsx
+<LineChart download="boom" />
+```
+
+**Note:** Safari will open the image in a new window instead of downloading.
+
 ## Installation
 
 Run
