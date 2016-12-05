@@ -122,6 +122,36 @@ Axis titles
 <LineChart xtitle="Time" ytitle="Population" />
 ```
 
+Straight lines between points instead of a curve
+
+```jsx
+<LineChart curve={false} />
+```
+
+Show or hide legend
+
+```jsx
+<LineChart legend={true} />
+```
+
+Specify legend position
+
+```jsx
+<LineChart legend="bottom" />
+```
+
+Donut chart
+
+```jsx
+<PieChart donut={true} />
+```
+
+Refresh data from a remote source every `n` seconds
+
+```jsx
+<LineChart refresh={60} />
+```
+
 You can pass options directly to the charting library with:
 
 ```jsx
