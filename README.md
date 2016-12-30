@@ -95,7 +95,7 @@ Min and max values
 Colors
 
 ```jsx
-<LineChart colors={["pink", "#999"]} />
+<LineChart colors={["#b00", "#666"]} />
 ```
 
 Stacked columns or bars
