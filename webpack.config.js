@@ -10,17 +10,6 @@ module.exports = {
     filename: "[name].js",
     libraryTarget: "umd"
   },
-  module: {
-    loaders: [
-      {
-        test: /\.js$/,
-        loader: "babel-loader",
-        query: {
-          presets: ["es2015", "react"]
-        }
-      }
-    ]
-  },
   plugins: [
     new webpack.optimize.UglifyJsPlugin({
       include: /\.min\.js$/,

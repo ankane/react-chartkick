@@ -20,10 +20,6 @@
     "url": "https://github.com/ankane/react-chartkick"
   },
   "devDependencies": {
-    "babel-core": "^6.24.1",
-    "babel-loader": "^6.4.1",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
     "webpack": "^1.13.2"
   }
 }
