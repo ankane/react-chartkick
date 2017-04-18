@@ -6,13 +6,17 @@
  * @license MIT
  */
 
-var React = require("react")
-var Chartkick = require("chartkick")
+import React from 'react'
+import Chartkick from 'chartkick'
 var chartId = 1
 
 var createComponent = function(chartType) {
-  return React.createClass({
-    newChartType: function(props) {
+  return class extends React.Component {
+    constructor(props) {
+      super(props)
+    }
+
+    newChartType(props) {
       var data = props.data
       var options = {}
       for (var prop in props) {
@@ -21,16 +25,19 @@ var createComponent = function(chartType) {
         }
       }
       new chartType(this.chartId, data, options)
-    },
-    componentDidMount: function() {
+    }
+
+    componentDidMount() {
       this.newChartType(this.props)
-    },
-    componentWillUpdate: function(nextProps) {
+    }
+
+    componentWillUpdate(nextProps) {
       if (this.props.data !== nextProps.data) {
         this.newChartType(nextProps)
       }
-    },
-    render: function() {
+    }
+
+    render() {
       var props = this.props
       var style = {
         height: props.height || "300px",
@@ -48,7 +55,7 @@ var createComponent = function(chartType) {
         )
       )
     }
-  })
+  }
 }
 
 module.exports = {
