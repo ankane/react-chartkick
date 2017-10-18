@@ -21,5 +21,8 @@
   },
   "devDependencies": {
     "webpack": "^1.13.2"
+  },
+  "dependencies": {
+    "create-react-class": "^15.6.2"
   }
 }
