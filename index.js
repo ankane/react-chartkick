@@ -8,10 +8,11 @@
 
 var React = require("react")
 var Chartkick = require("chartkick")
+var createReactClass = require('create-react-class');
 var chartId = 1
 
 var createComponent = function(chartType) {
-  return React.createClass({
+  return createReactClass({
     newChartType: function(props) {
       var data = props.data
       var options = {}
