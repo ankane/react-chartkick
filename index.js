@@ -6,58 +6,79 @@
  * @license MIT
  */
 
-var React = require("react")
-var Chartkick = require("chartkick")
-var chartId = 1
+import React, { Component } from 'react'
+import Chartkick from 'chartkick'
 
-var createComponent = function(chartType) {
-  return React.createClass({
-    newChartType: function(props) {
-      var data = props.data
-      var options = {}
-      for (var prop in props) {
-        if (props.hasOwnProperty(prop) && prop !== "data" && prop !== "id" && prop !== "height" && prop !== "width") {
-          options[prop] = props[prop]
-        }
+var chartId = 0
+
+class ChartComponent extends Component {
+  constructor (props) {
+    super(props)
+    chartId++
+  }
+
+  newChartType () {
+    var data = this.props.data
+    var options = {}
+    var chart = this.props.chart
+    for (var prop in this.props) {
+      if (
+        this.props.hasOwnProperty(prop) &&
+        prop !== 'data' &&
+        prop !== 'id' &&
+        prop !== 'height' &&
+        prop !== 'width'
+      ) {
+        options[prop] = this.props[prop]
       }
-      new chartType(this.chartId, data, options)
-    },
-    componentDidMount: function() {
-      this.newChartType(this.props)
-    },
-    componentWillUpdate: function(nextProps) {
-      if (this.props.data !== nextProps.data) {
-        this.newChartType(nextProps)
-      }
-    },
-    render: function() {
-      var props = this.props
-      var style = {
-        height: props.height || "300px",
-        lineHeight: props.height || "300px",
-        width: props.width || "100%",
-        textAlign: "center",
-        color: "#999",
-        fontSize: "14px",
-        fontFamily: "'Lucida Grande', 'Lucida Sans Unicode', Verdana, Arial, Helvetica, sans-serif"
-      }
-      this.chartId = this.chartId || props.id || ("chart-" + chartId++)
-      return (
-        React.createElement("div", {id: this.chartId, style: style},
-          "Loading..."
-        )
-      )
     }
-  })
+    return new chart(this.element, data, options)
+  }
+
+  componentDidMount () {
+    this.newChartType(this.props)
+  }
+
+  componentWillUpdate (nextProps) {
+    if (this.props.data !== nextProps.data) {
+      this.newChartType(nextProps)
+    }
+  }
+
+  render () {
+    var props = this.props
+    var style = {
+      height: props.height || '300px',
+      lineHeight: props.height || '300px',
+      width: props.width || '100%',
+      textAlign: 'center',
+      color: '#999',
+      fontSize: '14px',
+      fontFamily:
+        "'Lucida Grande', 'Lucida Sans Unicode', Verdana, Arial, Helvetica, sans-serif",
+    }
+    chartId = props.id || chartId || 'chart-' + chartId
+    return (
+      <div
+        ref={element => {
+          this.element = element
+        }}
+        id={chartId}
+        style={style}
+      >
+        Loading...
+      </div>
+    )
+  }
 }
 
-module.exports = {
-  LineChart: createComponent(Chartkick.LineChart),
-  PieChart: createComponent(Chartkick.PieChart),
-  ColumnChart: createComponent(Chartkick.ColumnChart),
-  BarChart: createComponent(Chartkick.BarChart),
-  AreaChart: createComponent(Chartkick.AreaChart),
-  ScatterChart: createComponent(Chartkick.ScatterChart),
-  GeoChart: createComponent(Chartkick.GeoChart),
-  Timeline: createComponent(Chartkick.Timeline)
-}
+var createChartComponent = (chartType, props) => <ChartComponent chart={chartType} {...props} />
+
+export const LineChart = props => createChartComponent(Chartkick.LineChart, props)
+export const PieChart = props => createChartComponent(Chartkick.PieChart, props)
+export const ColumnChart = props => createChartComponent(Chartkick.ColumnChart, props)
+export const BarChart = props => createChartComponent(Chartkick.BarChart, props)
+export const AreaChart = props => createChartComponent(Chartkick.AreaChart, props)
+export const ScatterChart = props => createChartComponent(Chartkick.ScatterChart, props)
+export const GeoChart = props => createChartComponent(Chartkick.GeoChart, props)
+export const Timeline = props => createChartComponent(Chartkick.Timeline, props)
