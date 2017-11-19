@@ -6,8 +6,8 @@
  * @license MIT
  */
 
-import React from 'react'
-import Chartkick from 'chartkick'
+import React from "react"
+import Chartkick from "chartkick"
 
 var chartId = 1
 
