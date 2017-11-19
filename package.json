@@ -8,9 +8,9 @@
   },
   "license": "MIT",
   "peerDependencies": {
+    "chartkick": "*",
     "react": "*",
-    "react-dom": "*",
-    "chartkick": "*"
+    "react-dom": "*"
   },
   "authors": [
     "ankane"
@@ -20,6 +20,6 @@
     "url": "https://github.com/ankane/react-chartkick"
   },
   "devDependencies": {
-    "webpack": "^1.13.2"
+    "webpack": "^3.8.1"
   }
 }
