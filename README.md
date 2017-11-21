@@ -1,6 +1,6 @@
 # React Chartkick
 
-Create beautiful charts with one line in React
+Create beautiful charts with one line of React
 
 [See it in action](http://ankane.github.io/chartkick.js/examples/)
 
@@ -255,7 +255,7 @@ And then the Chartkick libraries
 
 ```html
 <script src="https://unpkg.com/chartkick@2.2.4"></script>
-<script src="dist/react-chartkick.js"></script>
+<script src="https://unpkg.com/react-chartkick@0.1.4"></script>
 ```
 
 ## Contributing
