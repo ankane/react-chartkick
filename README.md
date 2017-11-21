@@ -11,7 +11,7 @@ Supports [Chart.js](http://www.chartjs.org/), [Google Charts](https://developers
 Line chart
 
 ```jsx
-<LineChart data={{"2013-02-10 00:00:00 -0800": 11, "2013-02-11 00:00:00 -0800": 6}} />
+<LineChart data={{"2017-01-01 00:00:00 -0800": 11, "2017-01-02 00:00:00 -0800": 6}} />
 ```
 
 Pie chart
@@ -35,7 +35,7 @@ Bar chart
 Area chart
 
 ```jsx
-<AreaChart data={{"2013-02-10 00:00:00 -0800": 11, "2013-02-11 00:00:00 -0800": 6}} />
+<AreaChart data={{"2017-01-01 00:00:00 -0800": 11, "2017-01-02 00:00:00 -0800": 6}} />
 ```
 
 Scatter chart
@@ -60,8 +60,8 @@ Multiple series
 
 ```jsx
 data = [
-  {"name":"Workout", "data": {"2013-02-10 00:00:00 -0800": 3, "2013-02-17 00:00:00 -0800": 4}},
-  {"name":"Call parents", "data": {"2013-02-10 00:00:00 -0800": 5, "2013-02-17 00:00:00 -0800": 3}}
+  {"name":"Workout", "data": {"2017-01-01 00:00:00 -0800": 3, "2017-01-02 00:00:00 -0800": 4}},
+  {"name":"Call parents", "data": {"2017-01-01 00:00:00 -0800": 5, "2017-01-02 00:00:00 -0800": 3}}
 ];
 
 // and
@@ -172,7 +172,7 @@ Pass data as an array or object
 Times can be a `Date`, a timestamp, or a string (strings are parsed)
 
 ```jsx
-<LineChart data={[[new Date(), 5], [1368174456, 4], ["2013-05-07 00:00:00 UTC", 7]]} />
+<LineChart data={[[new Date(), 5], [1368174456, 4], ["2017-01-01 00:00:00 UTC", 7]]} />
 ```
 
 ### Download Charts
