@@ -2,7 +2,7 @@
 
 Create beautiful charts with one line of React
 
-[See it in action](http://ankane.github.io/chartkick.js/examples/)
+[See it in action](https://www.chartkick.com/react)
 
 Supports [Chart.js](http://www.chartjs.org/), [Google Charts](https://developers.google.com/chart/), and [Highcharts](http://www.highcharts.com/)
 
