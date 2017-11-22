@@ -41,7 +41,7 @@ Area chart
 Scatter chart
 
 ```jsx
-<ScatterChart data={[[174.0, 80.0], [176.5, 82.3], [180.3, 73.6], [167.6, 74.1], [188.0, 85.9]]} />
+<ScatterChart data={[[174.0, 80.0], [176.5, 82.3]]} xtitle="Size" ytitle="Population" />
 ```
 
 Geo chart - *Google Charts*
@@ -53,7 +53,7 @@ Geo chart - *Google Charts*
 Timeline - *Google Charts*
 
 ```jsx
-<Timeline data={[["Washington", "1789-04-29", "1797-03-03"],["Adams", "1797-03-03", "1801-03-03"]]} />
+<Timeline data={[["Washington", "1789-04-29", "1797-03-03"], ["Adams", "1797-03-03", "1801-03-03"]]} />
 ```
 
 Multiple series
