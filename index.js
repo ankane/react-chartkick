@@ -1,6 +1,6 @@
 /*
  * React Chartkick
- * Create beautiful charts with one line of React
+ * Create beautiful JavaScript charts with one line of React
  * https://github.com/ankane/react-chartkick
  * v0.1.4
  * @license MIT

@@ -1,6 +1,6 @@
 # React Chartkick
 
-Create beautiful charts with one line of React
+Create beautiful JavaScript charts with one line of React
 
 [See it in action](https://www.chartkick.com/react)
 
@@ -35,7 +35,7 @@ Bar chart
 Area chart
 
 ```jsx
-<AreaChart data={{"2017-01-01 00:00:00 -0800": 11, "2017-01-02 00:00:00 -0800": 6}} />
+<AreaChart data={{"2017-01-01": 11, "2017-01-02": 6}} />
 ```
 
 Scatter chart
@@ -60,8 +60,8 @@ Multiple series
 
 ```jsx
 data = [
-  {"name":"Workout", "data": {"2017-01-01 00:00:00 -0800": 3, "2017-01-02 00:00:00 -0800": 4}},
-  {"name":"Call parents", "data": {"2017-01-01 00:00:00 -0800": 5, "2017-01-02 00:00:00 -0800": 3}}
+  {"name":"Workout", "data": {"2017-01-01": 3, "2017-01-02": 4}},
+  {"name":"Call parents", "data": {"2017-01-01": 5, "2017-01-02": 3}}
 ];
 
 // and
