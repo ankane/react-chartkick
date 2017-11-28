@@ -6,6 +6,8 @@
  * @license MIT
  */
 
+/* jshint esversion: 6, asi: true */
+
 import React from "react"
 import Chartkick from "chartkick"
 
