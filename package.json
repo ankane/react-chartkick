@@ -2,7 +2,7 @@
   "name": "react-chartkick",
   "version": "0.1.4",
   "description": "Create beautiful JavaScript charts with one line of React",
-  "main": "index.js",
+  "main": "dist/react-chartkick.js",
   "scripts": {
     "build": "webpack"
   },

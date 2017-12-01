@@ -1,10 +1,10 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("React"), require("Chartkick"));
+		module.exports = factory(require("react"), require("chartkick"));
 	else if(typeof define === 'function' && define.amd)
-		define(["React", "Chartkick"], factory);
+		define(["react", "chartkick"], factory);
 	else {
-		var a = typeof exports === 'object' ? factory(require("React"), require("Chartkick")) : factory(root["React"], root["Chartkick"]);
+		var a = typeof exports === 'object' ? factory(require("react"), require("chartkick")) : factory(root["React"], root["Chartkick"]);
 		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
 	}
 })(this, function(__WEBPACK_EXTERNAL_MODULE_1__, __WEBPACK_EXTERNAL_MODULE_2__) {
@@ -103,11 +103,13 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /*
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 * React Chartkick
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * Create beautiful charts with one line of React
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * Create beautiful JavaScript charts with one line of React
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 * https://github.com/ankane/react-chartkick
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 * v0.1.4
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 * @license MIT
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 */
+
+/* jshint esversion: 6, asi: true */
 
 var chartId = 1;
 

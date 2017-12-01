@@ -17,9 +17,9 @@ module.exports = {
         test: /\.js$/,
         exclude: /(node_modules|bower_components)/,
         use: {
-          loader: 'babel-loader',
+          loader: "babel-loader",
           options: {
-            presets: ['env']
+            presets: ["env"]
           }
         }
       }
@@ -32,7 +32,17 @@ module.exports = {
     })
   ],
   externals: {
-    "react": "React",
-    "chartkick": "Chartkick"
+    react: {
+      commonjs: "react",
+      commonjs2: "react",
+      amd: "react",
+      root: "React"
+    },
+    chartkick: {
+      commonjs: "chartkick",
+      commonjs2: "chartkick",
+      amd: "chartkick",
+      root: "Chartkick"
+    }
   }
 }
