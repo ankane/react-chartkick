@@ -1,4 +1,4 @@
-## 0.1.5 [unreleased]
+## 0.1.5
 
 - Use ES5 for main package
 
