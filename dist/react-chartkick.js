@@ -7,7 +7,7 @@
 		var a = typeof exports === 'object' ? factory(require("react"), require("chartkick")) : factory(root["React"], root["Chartkick"]);
 		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
 	}
-})(this, function(__WEBPACK_EXTERNAL_MODULE_1__, __WEBPACK_EXTERNAL_MODULE_2__) {
+})(typeof self !== 'undefined' ? self : this, function(__WEBPACK_EXTERNAL_MODULE_1__, __WEBPACK_EXTERNAL_MODULE_2__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -146,11 +146,12 @@ var ChartComponent = function (_React$Component) {
       this.newChartType(this.props);
     }
   }, {
-    key: "componentWillUpdate",
-    value: function componentWillUpdate(nextProps) {
+    key: "shouldComponentUpdate",
+    value: function shouldComponentUpdate(nextProps) {
       if (this.props.data !== nextProps.data) {
         this.newChartType(nextProps);
       }
+      return nextProps.id !== this.props.id;
     }
   }, {
     key: "render",
