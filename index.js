@@ -35,10 +35,11 @@ class ChartComponent extends React.Component {
     this.newChartType(this.props)
   }
 
-  componentWillUpdate(nextProps) {
+  shouldComponentUpdate(nextProps) {
     if (this.props.data !== nextProps.data) {
       this.newChartType(nextProps)
     }
+	return nextProps.id !== this.props.id;
   }
 
   render() {
