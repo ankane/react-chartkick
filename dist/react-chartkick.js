@@ -138,7 +138,7 @@ var ChartComponent = function (_React$Component) {
           options[prop] = props[prop];
         }
       }
-      new props.chartType(this.chartId, data, options);
+      new props.chartType(this.element, data, options);
     }
   }, {
     key: "componentDidMount",
@@ -146,15 +146,15 @@ var ChartComponent = function (_React$Component) {
       this.newChartType(this.props);
     }
   }, {
-    key: "componentWillUpdate",
-    value: function componentWillUpdate(nextProps) {
-      if (this.props.data !== nextProps.data) {
-        this.newChartType(nextProps);
-      }
+    key: "componentDidUpdate",
+    value: function componentDidUpdate() {
+      this.newChartType(this.props);
     }
   }, {
     key: "render",
     value: function render() {
+      var _this2 = this;
+
       var props = this.props;
       var style = {
         height: props.height || "300px",
@@ -166,7 +166,9 @@ var ChartComponent = function (_React$Component) {
         fontFamily: "'Lucida Grande', 'Lucida Sans Unicode', Verdana, Arial, Helvetica, sans-serif"
       };
       this.chartId = this.chartId || props.id || "chart-" + chartId++;
-      return _react2.default.createElement("div", { id: this.chartId, style: style }, "Loading...");
+      return _react2.default.createElement("div", { id: this.chartId, style: style, ref: function ref(element) {
+          return _this2.element = element;
+        } }, "Loading...");
     }
   }]);
 

@@ -28,17 +28,15 @@ class ChartComponent extends React.Component {
         options[prop] = props[prop]
       }
     }
-    new props.chartType(this.chartId, data, options)
+    new props.chartType(this.element, data, options)
   }
 
   componentDidMount() {
     this.newChartType(this.props)
   }
 
-  componentWillUpdate(nextProps) {
-    if (this.props.data !== nextProps.data) {
-      this.newChartType(nextProps)
-    }
+  componentDidUpdate() {
+    this.newChartType(this.props)
   }
 
   render() {
@@ -54,7 +52,7 @@ class ChartComponent extends React.Component {
     }
     this.chartId = this.chartId || props.id || ("chart-" + chartId++)
     return (
-      React.createElement("div", {id: this.chartId, style: style},
+      React.createElement("div", {id: this.chartId, style: style, ref: (element) => this.element = element},
         "Loading..."
       )
     )
