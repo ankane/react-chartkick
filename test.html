@@ -21,14 +21,14 @@
         }
 
         componentDidMount() {
-          const boom = () => this.setState({data: [...this.state.data, ["Aug", 10]], download: true})
+          const boom = () => this.setState({data: [...this.state.data, ["Aug", 10]], download: true, id: "chart-99"})
           setTimeout(boom, 1000)
         }
 
         render() {
           return (
             <div>
-              <LineChart data={this.state.data} download={this.state.download} />
+              <LineChart id={this.state.id} data={this.state.data} download={this.state.download} />
               <PieChart data={this.state.data} />
             </div>
           )

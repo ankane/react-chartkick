@@ -165,7 +165,7 @@ var ChartComponent = function (_React$Component) {
         fontSize: "14px",
         fontFamily: "'Lucida Grande', 'Lucida Sans Unicode', Verdana, Arial, Helvetica, sans-serif"
       };
-      this.chartId = this.chartId || props.id || "chart-" + chartId++;
+      this.chartId = props.id || this.chartId || "chart-" + chartId++;
       return _react2.default.createElement("div", { id: this.chartId, style: style, ref: function ref(element) {
           return _this2.element = element;
         } }, "Loading...");
