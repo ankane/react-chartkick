@@ -1,3 +1,8 @@
+## 0.1.6 [unreleased]
+
+- Fixed issue where updates happen only when `data` prop is changed
+- Fixed loading text bug
+
 ## 0.1.5
 
 - Use ES5 for main package
