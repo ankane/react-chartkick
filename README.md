@@ -255,7 +255,7 @@ And then the Chartkick libraries
 
 ```html
 <script src="https://unpkg.com/chartkick@2.2.4"></script>
-<script src="https://unpkg.com/react-chartkick@0.1.5"></script>
+<script src="https://unpkg.com/react-chartkick@0.1.6"></script>
 ```
 
 ## Contributing
