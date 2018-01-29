@@ -138,7 +138,9 @@ var ChartComponent = function (_React$Component) {
           options[prop] = props[prop];
         }
       }
-      new props.chartType(this.element, data, options);
+      if (this.element) {
+        new props.chartType(this.element, data, options);
+      }
     }
   }, {
     key: "componentDidMount",
