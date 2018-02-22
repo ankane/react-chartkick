@@ -146,6 +146,36 @@ Donut chart
 <PieChart donut={true} />
 ```
 
+Prefix, useful for currency - *Chart.js, Highcharts*
+
+```jsx
+<LineChart prefix="$" />
+```
+
+Suffix, useful for percentages - *Chart.js, Highcharts*
+
+```jsx
+<LineChart suffix="%" />
+```
+
+Set a thousands separator - *Chart.js, Highcharts*
+
+```jsx
+<LineChart thousands="," />
+```
+
+Set a decimal separator - *Chart.js, Highcharts*
+
+```jsx
+<LineChart decimal="," />
+```
+
+Show a message when data is empty
+
+```jsx
+<LineChart messages={{empty: "No data"}} />
+```
+
 Refresh data from a remote source every `n` seconds
 
 ```jsx
@@ -254,7 +284,7 @@ Include the charting library
 And then the Chartkick libraries
 
 ```html
-<script src="https://unpkg.com/chartkick@2.2.4"></script>
+<script src="https://unpkg.com/chartkick@2.3.0"></script>
 <script src="https://unpkg.com/react-chartkick@0.1.6"></script>
 ```
 
