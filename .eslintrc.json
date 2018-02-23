@@ -1,9 +1,14 @@
 {
-  "extends": "airbnb-base",
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true
+  },
   "rules": {
-    "semi": ["error", "never"],
-    "quotes": ["error", "double"],
-    "comma-dangle": ["error", "never"],
-    "prefer-destructuring": 0
+    "no-var": "error",
+    "semi": ["error", "never"]
   }
 }
