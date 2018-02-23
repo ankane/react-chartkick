@@ -228,7 +228,7 @@ Set the filename
 Run
 
 ```sh
-npm install chartkick react-chartkick --save
+yarn add chartkick react-chartkick
 ```
 
 And import the chart types you want
@@ -242,7 +242,7 @@ import { LineChart, PieChart } from 'react-chartkick';
 Run
 
 ```sh
-npm install chart.js --save
+yarn add chart.js
 ```
 
 And add
@@ -264,7 +264,7 @@ Include
 Run
 
 ```sh
-npm install highcharts --save
+yarn add highcharts
 ```
 
 And add
@@ -273,7 +273,7 @@ And add
 window.Highcharts = require('highcharts');
 ```
 
-### Without NPM
+### Without Yarn or NPM
 
 Include the charting library
 
@@ -303,5 +303,5 @@ To get started with development, run:
 git clone https://github.com/ankane/react-chartkick.git
 cd react-chartkick
 yarn
-npm run build
+yarn build
 ```
