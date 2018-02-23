@@ -19,6 +19,9 @@
     "type": "git",
     "url": "https://github.com/ankane/react-chartkick"
   },
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",

@@ -3,8 +3,8 @@ var path = require("path")
 
 module.exports = {
   entry: {
-    "react-chartkick": "./index.js",
-    "react-chartkick.min": "./index.js"
+    "react-chartkick": "./src/index.js",
+    "react-chartkick.min": "./src/index.js"
   },
   output: {
     path: path.resolve(__dirname, "dist"),
