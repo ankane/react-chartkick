@@ -1,0 +1,9 @@
+{
+  "extends": "airbnb-base",
+  "rules": {
+    "semi": ["error", "never"],
+    "quotes": ["error", "double"],
+    "comma-dangle": ["error", "never"],
+    "prefer-destructuring": 0
+  }
+}
