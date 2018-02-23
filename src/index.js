@@ -11,19 +11,13 @@
 import React from "react"
 import Chartkick from "chartkick"
 
-var chartId = 1
-
-var createComponent = (chartType) => {
-  return (props) => {
-    return React.createElement(ChartComponent, Object.assign({}, props, {chartType: chartType}))
-  }
-}
+let chartId = 1
 
 class ChartComponent extends React.Component {
   newChartType(props) {
-    var data = props.data
-    var options = {}
-    for (var prop in props) {
+    const data = props.data
+    const options = {}
+    for (const prop in props) {
       if (props.hasOwnProperty(prop) && prop !== "data" && prop !== "id" && prop !== "height" && prop !== "width") {
         options[prop] = props[prop]
       }
@@ -42,8 +36,8 @@ class ChartComponent extends React.Component {
   }
 
   render() {
-    var props = this.props
-    var style = {
+    const props = this.props
+    const style = {
       height: props.height || "300px",
       lineHeight: props.height || "300px",
       width: props.width || "100%",
@@ -58,6 +52,12 @@ class ChartComponent extends React.Component {
         "Loading..."
       )
     )
+  }
+}
+
+const createComponent = (chartType) => {
+  return (props) => {
+    return React.createElement(ChartComponent, Object.assign({}, props, {chartType: chartType}))
   }
 }
 
