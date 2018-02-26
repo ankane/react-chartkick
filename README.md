@@ -284,7 +284,7 @@ Include the charting library
 And then the Chartkick libraries
 
 ```html
-<script src="https://unpkg.com/chartkick@2.3.2"></script>
+<script src="https://unpkg.com/chartkick@2.3.3"></script>
 <script src="https://unpkg.com/react-chartkick@0.1.6"></script>
 ```
 
