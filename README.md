@@ -234,7 +234,7 @@ yarn add chartkick react-chartkick
 And import the chart types you want
 
 ```es6
-import { LineChart, PieChart } from 'react-chartkick';
+import { LineChart, PieChart } from 'react-chartkick'
 ```
 
 ### Chart.js
@@ -248,7 +248,7 @@ yarn add chart.js
 And add
 
 ```es6
-window.Chart = require('chart.js');
+import Chart from 'chart.js'
 ```
 
 ### Google Charts
@@ -269,8 +269,10 @@ yarn add highcharts
 
 And add
 
-```javascript
-window.Highcharts = require('highcharts');
+```es6
+import Highcharts from 'highcharts'
+
+window.Highcharts = Highcharts
 ```
 
 ### Without Yarn or NPM
