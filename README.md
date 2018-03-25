@@ -237,6 +237,8 @@ And import the chart types you want
 import { LineChart, PieChart } from 'react-chartkick'
 ```
 
+Next, choose your charting library.
+
 ### Chart.js
 
 Run
@@ -248,6 +250,7 @@ yarn add chart.js
 And add
 
 ```es6
+// eslint-disable-next-line
 import Chart from 'chart.js'
 ```
 

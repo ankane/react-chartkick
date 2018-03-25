@@ -1,11 +1,3 @@
-/*
- * React Chartkick
- * Create beautiful JavaScript charts with one line of React
- * https://github.com/ankane/react-chartkick
- * v0.1.6
- * @license MIT
- */
-
 import React from "react"
 import Chartkick from "chartkick"
 
