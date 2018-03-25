@@ -1,3 +1,7 @@
+## 0.1.7
+
+- Added module build
+
 ## 0.1.6
 
 - Fixed issue where updates happen only when `data` prop is changed
