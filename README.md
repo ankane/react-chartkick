@@ -4,7 +4,7 @@ Create beautiful JavaScript charts with one line of React
 
 [See it in action](https://www.chartkick.com/react)
 
-Supports [Chart.js](http://www.chartjs.org/), [Google Charts](https://developers.google.com/chart/), and [Highcharts](https://www.highcharts.com/)
+Supports [Chart.js](https://www.chartjs.org/), [Google Charts](https://developers.google.com/chart/), and [Highcharts](https://www.highcharts.com/)
 
 ## Charts
 
@@ -188,7 +188,7 @@ You can pass options directly to the charting library with:
 <LineChart library={{backgroundColor: "#eee"}} />
 ```
 
-See the documentation for [Google Charts](https://developers.google.com/chart/interactive/docs/gallery), [Highcharts](https://api.highcharts.com/highcharts), and [Chart.js](http://www.chartjs.org/docs/) for more info.
+See the documentation for [Google Charts](https://developers.google.com/chart/interactive/docs/gallery), [Highcharts](https://api.highcharts.com/highcharts), and [Chart.js](https://www.chartjs.org/docs/) for more info.
 
 ### Data
 
