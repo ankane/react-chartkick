@@ -279,13 +279,13 @@ import Highcharts from 'highcharts'
 ReactChartkick.addAdapter(Highcharts)
 ```
 
-### Without Yarn or NPM
+### No Package Manager
 
 Include the charting library and the Chartkick library
 
 ```html
-<script src="https://unpkg.com/chart.js@2.7.1/dist/Chart.bundle.js"></script>
-<script src="https://unpkg.com/react-chartkick@0.1.7"></script>
+<script src="https://unpkg.com/chart.js@2.7.2/dist/Chart.bundle.js"></script>
+<script src="https://unpkg.com/react-chartkick@0.2.0"></script>
 ```
 
 ## Contributing
