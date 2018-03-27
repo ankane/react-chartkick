@@ -1,4 +1,4 @@
-## 0.2.0 [unreleased]
+## 0.2.0
 
 - Moved `chartkick` to a dependency from a peer dependency
 - Added `addAdapter` function - goodbye `window`

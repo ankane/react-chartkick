@@ -225,38 +225,38 @@ Set the filename
 
 ## Installation
 
-Run
-
-```sh
-yarn add chartkick react-chartkick
-```
-
-And import the chart types you want
-
-```es6
-import { LineChart, PieChart } from 'react-chartkick'
-```
-
-Next, choose your charting library.
-
 ### Chart.js
 
 Run
 
 ```sh
-yarn add chart.js
+yarn add react-chartkick chart.js
 ```
 
 And add
 
 ```es6
-// eslint-disable-next-line
+import ReactChartkick, { LineChart, PieChart } from 'react-chartkick'
 import Chart from 'chart.js'
+
+ReactChartkick.addAdapter(Chart)
 ```
 
 ### Google Charts
 
-Include
+Run
+
+```sh
+yarn add react-chartkick
+```
+
+And add
+
+```sh
+import { LineChart, PieChart } from 'react-chartkick'
+```
+
+And include on the page
 
 ```html
 <script src="https://www.gstatic.com/charts/loader.js"></script>
@@ -267,29 +267,24 @@ Include
 Run
 
 ```sh
-yarn add highcharts
+yarn add react-chartkick highcharts
 ```
 
 And add
 
 ```es6
+import ReactChartkick, { LineChart, PieChart } from 'react-chartkick'
 import Highcharts from 'highcharts'
 
-window.Highcharts = Highcharts
+ReactChartkick.addAdapter(Highcharts)
 ```
 
 ### Without Yarn or NPM
 
-Include the charting library
+Include the charting library and the Chartkick library
 
 ```html
 <script src="https://unpkg.com/chart.js@2.7.1/dist/Chart.bundle.js"></script>
-```
-
-And then the Chartkick libraries
-
-```html
-<script src="https://unpkg.com/chartkick@2.3.4"></script>
 <script src="https://unpkg.com/react-chartkick@0.1.7"></script>
 ```
 
