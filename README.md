@@ -252,7 +252,7 @@ yarn add react-chartkick
 
 And add
 
-```sh
+```es6
 import { LineChart, PieChart } from 'react-chartkick'
 ```
 
