@@ -30,7 +30,8 @@ export default [
       file: pkg.main,
       format: "umd",
       banner: banner,
-      globals: globals
+      globals: globals,
+      exports: "named"
     },
     external: external,
     plugins: [
@@ -45,7 +46,8 @@ export default [
       name: outputName,
       file: pkg.main.replace(/\.js$/, ".min.js"),
       format: "umd",
-      globals: globals
+      globals: globals,
+      exports: "named"
     },
     external: external,
     plugins: [
@@ -60,7 +62,8 @@ export default [
     output: {
       file: pkg.module,
       format: "es",
-      banner: banner
+      banner: banner,
+      exports: "named"
     },
     external: esExternal,
     plugins: [

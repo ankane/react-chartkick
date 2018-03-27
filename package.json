@@ -10,7 +10,6 @@
   },
   "license": "MIT",
   "peerDependencies": {
-    "chartkick": "*",
     "react": "*",
     "react-dom": "*"
   },
@@ -31,5 +30,8 @@
     "rollup-plugin-commonjs": "^9.1.0",
     "rollup-plugin-node-resolve": "^3.3.0",
     "rollup-plugin-uglify": "^3.0.0"
+  },
+  "dependencies": {
+    "chartkick": "^2.3.5"
   }
 }
