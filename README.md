@@ -288,6 +288,8 @@ Include the charting library and the Chartkick library
 <script src="https://unpkg.com/react-chartkick@0.2.0"></script>
 ```
 
+Charts are prefixed with `ReactChartkick`, like `ReactChartkick.LineChart`.
+
 ## Contributing
 
 Everyone is encouraged to help improve this project. Here are a few ways you can help:
