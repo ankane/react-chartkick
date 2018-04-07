@@ -4,7 +4,7 @@ import Chartkick from "chartkick"
 let chartId = 1
 
 class ChartComponent extends React.Component {
-  getChartDataAndOptions(props) {
+  newChartType(props) {
     const data = props.data
     const options = {}
     for (const prop in props) {
@@ -12,29 +12,21 @@ class ChartComponent extends React.Component {
         options[prop] = props[prop]
       }
     }
-    return {data, options}
-  }
-
-  createChart(props) {
-    const {data, options} = this.getChartDataAndOptions(props)
     if (this.element) {
-      this.chart = new props.chartType(this.element, data, options)
-    }
-  }
-
-  updateChart(props) {
-    const {data, options} = this.getChartDataAndOptions(props)
-    if (this.element) {
-      this.chart.updateData(data, options)
+      if (this.chart) {
+        this.chart.updateData(data, options);
+      } else {
+        this.chart = new props.chartType(this.element, data, options)
+      }
     }
   }
 
   componentDidMount() {
-    this.createChart(this.props)
+    this.newChartType(this.props)
   }
 
   componentDidUpdate() {
-    this.updateChart(this.props)
+    this.newChartType(this.props)
   }
 
   render() {
