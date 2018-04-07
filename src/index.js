@@ -14,7 +14,7 @@ class ChartComponent extends React.Component {
     }
     if (this.element) {
       if (this.chart) {
-        this.chart.updateData(data, options);
+        this.chart.updateData(data, options)
       } else {
         this.chart = new props.chartType(this.element, data, options)
       }
