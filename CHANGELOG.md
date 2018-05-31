@@ -1,3 +1,7 @@
+## 0.2.1 [unreleased]
+
+- Added `dataset` option
+
 ## 0.2.0
 
 - Moved `chartkick` to a dependency from a peer dependency

@@ -32,6 +32,6 @@
     "rollup-plugin-uglify": "^3.0.0"
   },
   "dependencies": {
-    "chartkick": "^2.3.5"
+    "chartkick": "^2.3.6"
   }
 }
