@@ -190,7 +190,7 @@ You can pass options directly to the charting library with:
 
 See the documentation for [Google Charts](https://developers.google.com/chart/interactive/docs/gallery), [Highcharts](https://api.highcharts.com/highcharts), and [Chart.js](https://www.chartjs.org/docs/) for more info.
 
-To customize datasets in Chart.js, use: [master]
+To customize datasets in Chart.js, use:
 
 ```jsx
 <LineChart dataset={{borderWidth: 10}} />
@@ -293,7 +293,7 @@ Include the charting library and the Chartkick library
 
 ```html
 <script src="https://unpkg.com/chart.js@2.7.2/dist/Chart.bundle.js"></script>
-<script src="https://unpkg.com/react-chartkick@0.2.0"></script>
+<script src="https://unpkg.com/react-chartkick@0.2.1"></script>
 ```
 
 Charts are prefixed with `ReactChartkick`, like `ReactChartkick.LineChart`.
