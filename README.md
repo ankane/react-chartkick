@@ -44,6 +44,12 @@ Scatter chart
 <ScatterChart data={[[174.0, 80.0], [176.5, 82.3]]} xtitle="Size" ytitle="Population" />
 ```
 
+Bubble chart
+
+```jsx
+<BubbleChart data={[[0.5, 0.8, 5], [0.7, 0.7, 10]]} xtitle="Performance" ytitle="Engagement" />
+```
+
 Geo chart - *Google Charts*
 
 ```jsx

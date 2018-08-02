@@ -61,6 +61,7 @@ export const ColumnChart = createComponent(Chartkick.ColumnChart)
 export const BarChart = createComponent(Chartkick.BarChart)
 export const AreaChart = createComponent(Chartkick.AreaChart)
 export const ScatterChart = createComponent(Chartkick.ScatterChart)
+export const BubbleChart = createComponent(Chartkick.BubbleChart)
 export const GeoChart = createComponent(Chartkick.GeoChart)
 export const Timeline = createComponent(Chartkick.Timeline)
 
