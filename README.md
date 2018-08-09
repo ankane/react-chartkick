@@ -207,10 +207,10 @@ Pass data as an array or object
 <PieChart data={[["Blueberry", 44], ["Strawberry", 23]]} />
 ```
 
-Times can be a `Date`, a timestamp, or a string (strings are parsed)
+Times can be a `Date` or a string (strings are parsed)
 
 ```jsx
-<LineChart data={[[new Date(), 5], [1368174456, 4], ["2017-01-01 00:00:00 UTC", 7]]} />
+<LineChart data={[[new Date(), 5], ["2017-01-01 00:00:00 UTC", 7]]} />
 ```
 
 ### Download Charts
