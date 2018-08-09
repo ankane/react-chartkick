@@ -1,6 +1,6 @@
 {
   "name": "react-chartkick",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Create beautiful JavaScript charts with one line of React",
   "main": "dist/react-chartkick.js",
   "module": "dist/react-chartkick.esm.js",
@@ -32,6 +32,6 @@
     "rollup-plugin-uglify": "^3.0.0"
   },
   "dependencies": {
-    "chartkick": "^2.3.6"
+    "chartkick": "^3.0.0"
   }
 }

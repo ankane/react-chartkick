@@ -1,3 +1,8 @@
+## 0.3.0
+
+- Updated Chartkick.js to 3.0.0
+- Removed `xtype` option
+
 ## 0.2.1
 
 - Added `dataset` option
