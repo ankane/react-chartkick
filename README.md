@@ -307,6 +307,16 @@ Include the charting library and the Chartkick library
 
 Charts are prefixed with `ReactChartkick`, like `ReactChartkick.LineChart`.
 
+### Multiple Libraries
+
+If more than one charting library is loaded, choose between them with:
+
+```javascript
+<LineChart adapter="google" />
+```
+
+Options are `google`, `highcharts`, and `chartjs`
+
 ## Contributing
 
 Everyone is encouraged to help improve this project. Here are a few ways you can help:
