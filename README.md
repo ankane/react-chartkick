@@ -6,6 +6,25 @@ Create beautiful JavaScript charts with one line of React
 
 Supports [Chart.js](https://www.chartjs.org/), [Google Charts](https://developers.google.com/chart/), and [Highcharts](https://www.highcharts.com/)
 
+## Quick Start
+
+Run
+
+```sh
+yarn add react-chartkick chart.js
+```
+
+And add
+
+```es6
+import ReactChartkick, { LineChart, PieChart } from 'react-chartkick'
+import Chart from 'chart.js'
+
+ReactChartkick.addAdapter(Chart)
+```
+
+This sets up Chartkick with Chart.js. For other charting libaries, see [detailed instructions](#installation).
+
 ## Charts
 
 Line chart
