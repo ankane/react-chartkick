@@ -356,7 +356,7 @@ Charts are prefixed with `ReactChartkick`, like `ReactChartkick.LineChart`.
 
 If more than one charting library is loaded, choose between them with:
 
-```javascript
+```jsx
 <LineChart adapter="google" />
 ```
 
