@@ -64,4 +64,4 @@ export const ScatterChart = createComponent(Chartkick.ScatterChart)
 export const GeoChart = createComponent(Chartkick.GeoChart)
 export const Timeline = createComponent(Chartkick.Timeline)
 
-export default Chartkick;
+export default Chartkick

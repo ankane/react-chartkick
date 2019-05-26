@@ -1,6 +1,6 @@
 {
   "name": "react-chartkick",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Create beautiful JavaScript charts with one line of React",
   "main": "dist/react-chartkick.js",
   "module": "dist/react-chartkick.esm.js",
