@@ -16,11 +16,9 @@ yarn add react-chartkick chart.js
 
 And add
 
-```es6
-import ReactChartkick, { LineChart, PieChart } from 'react-chartkick'
-import Chart from 'chart.js'
-
-ReactChartkick.addAdapter(Chart)
+```javascript
+import { LineChart, PieChart } from 'react-chartkick'
+import 'chart.js'
 ```
 
 This sets up Chartkick with Chart.js. For other charting libraries, see [detailed instructions](#installation).
@@ -271,11 +269,9 @@ yarn add react-chartkick chart.js
 
 And add
 
-```es6
-import ReactChartkick, { LineChart, PieChart } from 'react-chartkick'
-import Chart from 'chart.js'
-
-ReactChartkick.addAdapter(Chart)
+```javascript
+import { LineChart, PieChart } from 'react-chartkick'
+import 'chart.js'
 ```
 
 ### Google Charts
@@ -288,14 +284,20 @@ yarn add react-chartkick
 
 And add
 
-```es6
-import { LineChart, PieChart } from 'react-chartkick'
+```javascript
+import Chartkick, { LineChart, PieChart } from 'react-chartkick'
 ```
 
 And include on the page
 
 ```html
 <script src="https://www.gstatic.com/charts/loader.js"></script>
+```
+
+To specify a language or Google Maps API key, use:
+
+```js
+Chartkick.configure({language: "de", mapsApiKey: "..."})
 ```
 
 ### Highcharts
@@ -308,11 +310,11 @@ yarn add react-chartkick highcharts
 
 And add
 
-```es6
-import ReactChartkick, { LineChart, PieChart } from 'react-chartkick'
+```javascript
+import Chartkick, { LineChart, PieChart } from 'react-chartkick'
 import Highcharts from 'highcharts'
 
-ReactChartkick.addAdapter(Highcharts)
+Chartkick.use(Highcharts)
 ```
 
 ### No Package Manager
@@ -320,7 +322,7 @@ ReactChartkick.addAdapter(Highcharts)
 Include the charting library and the Chartkick library
 
 ```html
-<script src="https://unpkg.com/chart.js@2.7.2/dist/Chart.bundle.js"></script>
+<script src="https://unpkg.com/chart.js@2.8.0/dist/Chart.bundle.js"></script>
 <script src="https://unpkg.com/react-chartkick@0.3.0"></script>
 ```
 

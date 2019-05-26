@@ -64,8 +64,4 @@ export const ScatterChart = createComponent(Chartkick.ScatterChart)
 export const GeoChart = createComponent(Chartkick.GeoChart)
 export const Timeline = createComponent(Chartkick.Timeline)
 
-export default {
-  addAdapter: function(library) {
-    Chartkick.addAdapter(library)
-  }
-}
+export default Chartkick;
