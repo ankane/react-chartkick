@@ -109,6 +109,12 @@ Min and max values
 
 `min` defaults to 0 for charts with non-negative values. Use `null` to let the charting library decide.
 
+Min and max for x-axis - *Chart.js*
+
+```jsx
+<LineChart xmin="2018-01-01" xmax="2019-01-01" />
+```
+
 Colors
 
 ```jsx
@@ -215,6 +221,16 @@ To customize datasets in Chart.js, use:
 
 You can pass this option to individual series as well.
 
+### Global Options
+
+To set options for all of your charts, use:
+
+```javascript
+Chartkick.options = {
+  colors: ["#b00", "#666"]
+}
+```
+
 ### Data
 
 Pass data as an array or object
@@ -238,6 +254,8 @@ You can pass a few options with a series:
 - `data`
 - `color`
 - `dataset` - *Chart.js only*
+- `points` - *Chart.js only*
+- `curve` - *Chart.js only*
 
 ### Download Charts
 
@@ -256,6 +274,12 @@ Set the filename
 ```
 
 **Note:** Safari will open the image in a new window instead of downloading.
+
+Set the background color
+
+```jsx
+<LineChart download={{background: "#fff"}} />
+```
 
 ## Installation
 
