@@ -50,8 +50,8 @@ class ChartComponent extends React.Component {
 }
 
 const createComponent = (chartType) => {
-  const ChartkickComponent = (props) => {
-    return React.createElement(ChartComponent, Object.assign({}, props, {chartType: chartType}))
+  const ChartkickComponent = ({innerRef, ...props}) => {
+    return React.createElement(ChartComponent, Object.assign({}, props, {chartType: chartType, ref: innerRef}))
   }
   ChartkickComponent.displayName = chartType.name
   return ChartkickComponent
