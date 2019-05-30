@@ -1,3 +1,8 @@
+## 0.3.2 [unreleased]
+
+- Fixed component names in React Developer Tools
+- Added `innerRef` option
+
 ## 0.3.1
 
 - Added `use` function
