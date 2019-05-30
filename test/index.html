@@ -25,6 +25,10 @@
         constructor() {
           super()
           this.state = {data: [["Jan", 4], ["Feb", 2], ["Mar", 10], ["Apr", 5], ["May", 3], ["Jun", 8], ["Jul", 4]]}
+
+          this.chartRef = (element) => {
+            console.log(element)
+          }
         }
 
         componentDidMount() {
@@ -35,7 +39,7 @@
         render() {
           return (
             <div>
-              <LineChart id={this.state.id} data={this.state.data} download={this.state.download} prefix="$" />
+              <LineChart id={this.state.id} innerRef={this.chartRef} data={this.state.data} download={this.state.download} prefix="$" />
               <PieChart data={this.state.data} />
             </div>
           )
