@@ -1,5 +1,6 @@
 import React from "react"
 import Chartkick from "chartkick"
+import Assign from 'lodash.assign'
 
 let chartId = 1
 
@@ -51,7 +52,7 @@ class ChartComponent extends React.Component {
 
 const createComponent = (chartType) => {
   const ChartkickComponent = ({innerRef, ...props}) => {
-    return React.createElement(ChartComponent, Object.assign({}, props, {chartType: chartType, ref: innerRef}))
+    return React.createElement(ChartComponent, Assign({}, props, {chartType: chartType, ref: innerRef}))
   }
   ChartkickComponent.displayName = chartType.name
   return ChartkickComponent

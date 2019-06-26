@@ -32,6 +32,7 @@
     "rollup-plugin-uglify": "^6.0.2"
   },
   "dependencies": {
-    "chartkick": "^3.1.0"
+    "chartkick": "^3.1.0",
+    "lodash.assign": "^4.2.0"
   }
 }
