@@ -2,6 +2,7 @@
 
 - Fixed component names in React Developer Tools
 - Added `innerRef` option
+- Removed `Object.assign` for older browsers
 
 ## 0.3.1
 
