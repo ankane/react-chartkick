@@ -1,9 +1,9 @@
 ## 0.3.2 [unreleased]
 
-- Fixed component names in React Developer Tools
 - Added `innerRef` option
-- Removed `Object.assign` for older browsers
 - Updated Chartkick.js to 3.1.1
+- Fixed component names in React Developer Tools
+- Removed `Object.assign` for older browsers
 
 ## 0.3.1
 
