@@ -1,4 +1,4 @@
-## 0.3.2 [unreleased]
+## 0.3.2
 
 - Added `innerRef` option
 - Updated Chartkick.js to 3.1.1
