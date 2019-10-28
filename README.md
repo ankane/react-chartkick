@@ -254,7 +254,7 @@ function fetchData(success, fail) {
   // or fail("Data not available")
 }
 
-<LineChart data={fetchData} />
+<PieChart data={fetchData} />
 ```
 
 ### Multiple Series
