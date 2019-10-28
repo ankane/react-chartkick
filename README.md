@@ -246,6 +246,17 @@ Times can be a `Date` or a string (strings are parsed)
 <LineChart data={[[new Date(), 5], ["2017-01-01 00:00:00 UTC", 7]]} />
 ```
 
+Data can also be a callback
+
+```jsx
+function fetchData(success, fail) {
+  success({"Blueberry": 44, "Strawberry": 23})
+  // or fail("Data not available")
+}
+
+<LineChart data={fetchData} />
+```
+
 ### Multiple Series
 
 You can pass a few options with a series:
@@ -347,7 +358,7 @@ Include the charting library and the Chartkick library
 
 ```html
 <script src="https://unpkg.com/chart.js@2.8.0/dist/Chart.bundle.js"></script>
-<script src="https://unpkg.com/react-chartkick@0.3.2"></script>
+<script src="https://unpkg.com/react-chartkick@0.3.3"></script>
 ```
 
 Charts are prefixed with `ReactChartkick`, like `ReactChartkick.LineChart`.
