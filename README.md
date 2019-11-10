@@ -193,6 +193,30 @@ Set a decimal separator - *Chart.js, Highcharts*
 <LineChart decimal="," />
 ```
 
+Set significant digits - *Chart.js, Highcharts*
+
+```jsx
+<LineChart precision={3} />
+```
+
+Set rounding - *Chart.js, Highcharts*
+
+```jsx
+<LineChart round={2} />
+```
+
+Show insignificant zeros, useful for currency - *Chart.js, Highcharts*
+
+```jsx
+<LineChart round={2} zeros={true} />
+```
+
+Friendly file sizes - *Chart.js 2.8+*
+
+```jsx
+<LineChart bytes={true} />
+```
+
 Show a message when data is empty
 
 ```jsx
