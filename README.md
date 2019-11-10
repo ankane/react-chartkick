@@ -381,8 +381,8 @@ Chartkick.use(Highcharts)
 Include the charting library and the Chartkick library
 
 ```html
-<script src="https://unpkg.com/chart.js@2.9.1/dist/Chart.bundle.js"></script>
-<script src="https://unpkg.com/react-chartkick@0.3.3"></script>
+<script src="https://unpkg.com/chart.js@2.8.0/dist/Chart.bundle.js"></script>
+<script src="https://unpkg.com/react-chartkick@0.4.0"></script>
 ```
 
 Charts are prefixed with `ReactChartkick`, like `ReactChartkick.LineChart`.
