@@ -18,7 +18,7 @@
 - Added `use` function
 - Updated Chartkick.js to 3.1.0
 
-## 0.3.0
+## 0.3.0 (2018-08-08)
 
 - Updated Chartkick.js to 3.0.0
 - Removed `xtype` option
