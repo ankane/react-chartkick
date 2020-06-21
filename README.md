@@ -11,7 +11,7 @@ Supports [Chart.js](https://www.chartjs.org/), [Google Charts](https://developer
 Run
 
 ```sh
-yarn add react-chartkick chart.js
+npm install react-chartkick chart.js
 ```
 
 And add
@@ -323,7 +323,7 @@ Set the background color
 Run
 
 ```sh
-yarn add react-chartkick chart.js
+npm install react-chartkick chart.js
 ```
 
 And add
@@ -338,7 +338,7 @@ import 'chart.js'
 Run
 
 ```sh
-yarn add react-chartkick
+npm install react-chartkick
 ```
 
 And add
@@ -364,7 +364,7 @@ Chartkick.configure({language: "de", mapsApiKey: "..."})
 Run
 
 ```sh
-yarn add react-chartkick highcharts
+npm install react-chartkick highcharts
 ```
 
 And add
@@ -411,6 +411,6 @@ To get started with development, run:
 ```sh
 git clone https://github.com/ankane/react-chartkick.git
 cd react-chartkick
-yarn
-yarn build
+npm install
+npm run build
 ```
