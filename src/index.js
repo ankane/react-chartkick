@@ -41,9 +41,13 @@ class ChartComponent extends React.Component {
       fontFamily: "'Lucida Grande', 'Lucida Sans Unicode', Verdana, Arial, Helvetica, sans-serif"
     }
     this.chartId = props.id || this.chartId || ("chart-" + chartId++)
+
+    // check if undefined so works with empty string
+    let loading = props.loading !== undefined ? props.loading : "Loading...";
+
     return (
       React.createElement("div", {id: this.chartId, style: style, ref: (element) => this.element = element},
-        props.loading || "Loading..."
+        loading
       )
     )
   }
