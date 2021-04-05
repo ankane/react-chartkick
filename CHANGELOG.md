@@ -1,3 +1,9 @@
+## 0.5.0 (unreleased)
+
+- Added `loading` option
+- Prefer `empty` over `messages: {empty: ...}`
+- Removed Chartkick.js from the no packager manager install
+
 ## 0.4.1 (2020-07-23)
 
 - Updated Chartkick.js to 3.2.1

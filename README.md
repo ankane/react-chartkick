@@ -18,7 +18,7 @@ And add
 
 ```javascript
 import { LineChart, PieChart } from 'react-chartkick'
-import 'chart.js'
+import 'chartkick/chart.js'
 ```
 
 This sets up Chartkick with Chart.js. For other charting libraries, see [detailed instructions](#installation).
@@ -217,10 +217,16 @@ Friendly byte sizes - *Chart.js 2.8+*
 <LineChart bytes={true} />
 ```
 
-Show a message when data is empty
+Specify the message when the chart is loading
 
-```jsx
-<LineChart messages={{empty: "No data"}} />
+```vue
+<LineChart loading="Loading..." />
+```
+
+Specify the message when data is empty
+
+```vue
+<LineChart empty="No data" />
 ```
 
 Refresh data from a remote source every `n` seconds
@@ -330,7 +336,7 @@ And add
 
 ```javascript
 import { LineChart, PieChart } from 'react-chartkick'
-import 'chart.js'
+import 'chartkick/chart.js'
 ```
 
 ### Google Charts
@@ -370,10 +376,8 @@ npm install react-chartkick highcharts
 And add
 
 ```javascript
-import Chartkick, { LineChart, PieChart } from 'react-chartkick'
-import Highcharts from 'highcharts'
-
-Chartkick.use(Highcharts)
+import { LineChart, PieChart } from 'react-chartkick'
+import 'chartkick/highcharts'
 ```
 
 ### No Package Manager
@@ -381,8 +385,10 @@ Chartkick.use(Highcharts)
 Include the charting library and the Chartkick library
 
 ```html
-<script src="https://unpkg.com/chart.js@2.8.0/dist/Chart.bundle.js"></script>
-<script src="https://unpkg.com/react-chartkick@0.4.1"></script>
+<script src="https://unpkg.com/chart.js@3.0.2/dist/chart.js"></script>
+<script src="https://unpkg.com/chartjs-adapter-date-fns@2.0.0/dist/chartjs-adapter-date-fns.bundle.js"></script>
+<script src="https://unpkg.com/chartkick@4.0.0/dist/chartkick.js"></script>
+<script src="https://unpkg.com/react-chartkick@0.5.0"></script>
 ```
 
 Charts are prefixed with `ReactChartkick`, like `ReactChartkick.LineChart`.

@@ -43,7 +43,7 @@ class ChartComponent extends React.Component {
     this.chartId = props.id || this.chartId || ("chart-" + chartId++)
     return (
       React.createElement("div", {id: this.chartId, style: style, ref: (element) => this.element = element},
-        "Loading..."
+        props.loading || "Loading..."
       )
     )
   }
