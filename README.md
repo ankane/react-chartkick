@@ -28,7 +28,7 @@ This sets up Chartkick with Chart.js. For other charting libraries, see [detaile
 Line chart
 
 ```jsx
-<LineChart data={{"2017-01-01": 11, "2017-01-02": 6}} />
+<LineChart data={{"2021-01-01": 11, "2021-01-02": 6}} />
 ```
 
 Pie chart
@@ -52,7 +52,7 @@ Bar chart
 Area chart
 
 ```jsx
-<AreaChart data={{"2017-01-01": 11, "2017-01-02": 6}} />
+<AreaChart data={{"2021-01-01": 11, "2021-01-02": 6}} />
 ```
 
 Scatter chart
@@ -77,8 +77,8 @@ Multiple series
 
 ```jsx
 data = [
-  {"name":"Workout", "data": {"2017-01-01": 3, "2017-01-02": 4}},
-  {"name":"Call parents", "data": {"2017-01-01": 5, "2017-01-02": 3}}
+  {"name":"Workout", "data": {"2021-01-01": 3, "2021-01-02": 4}},
+  {"name":"Call parents", "data": {"2021-01-01": 5, "2021-01-02": 3}}
 ];
 
 // and
@@ -112,7 +112,7 @@ Min and max values
 Min and max for x-axis - *Chart.js*
 
 ```jsx
-<LineChart xmin="2018-01-01" xmax="2019-01-01" />
+<LineChart xmin="2021-01-01" xmax="2022-01-01" />
 ```
 
 Colors
@@ -211,7 +211,7 @@ Show insignificant zeros, useful for currency - *Chart.js, Highcharts*
 <LineChart round={2} zeros={true} />
 ```
 
-Friendly byte sizes - *Chart.js 2.8+*
+Friendly byte sizes - *Chart.js*
 
 ```jsx
 <LineChart bytes={true} />
@@ -273,7 +273,7 @@ Pass data as an array or object
 Times can be a `Date` or a string (strings are parsed)
 
 ```jsx
-<LineChart data={[[new Date(), 5], ["2017-01-01 00:00:00 UTC", 7]]} />
+<LineChart data={[[new Date(), 5], ["2021-01-01 00:00:00 UTC", 7]]} />
 ```
 
 Data can also be a callback
