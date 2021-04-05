@@ -219,13 +219,13 @@ Friendly byte sizes - *Chart.js*
 
 Specify the message when the chart is loading
 
-```vue
+```jsx
 <LineChart loading="Loading..." />
 ```
 
 Specify the message when data is empty
 
-```vue
+```jsx
 <LineChart empty="No data" />
 ```
 
