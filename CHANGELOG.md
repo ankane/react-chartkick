@@ -1,4 +1,4 @@
-## 0.5.0 (unreleased)
+## 0.5.0 (2021-04-05)
 
 - Added `loading` option
 - Prefer `empty` over `messages: {empty: ...}`
