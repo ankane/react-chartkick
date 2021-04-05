@@ -45,6 +45,12 @@ class ChartComponent extends React.Component {
     // check if undefined so works with empty string
     let loading = props.loading !== undefined ? props.loading : "Loading...";
 
+    // createElement accepts React children,
+    // but limit to string since it may be used by Chartkick.js
+    if (typeof loading !== "string") {
+      throw new Error("loading must be a string");
+    }
+
     return (
       React.createElement("div", {id: this.chartId, style: style, ref: (element) => this.element = element},
         loading
