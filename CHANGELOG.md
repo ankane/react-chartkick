@@ -1,4 +1,4 @@
-## 0.5.1 (unreleased)
+## 0.5.1 (2021-04-06)
 
 - Fixed `loading` option with empty string
 
