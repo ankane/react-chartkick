@@ -387,7 +387,7 @@ Include the charting library and the Chartkick library
 ```html
 <script src="https://unpkg.com/chart.js@3.0.2"></script>
 <script src="https://unpkg.com/chartjs-adapter-date-fns@2.0.0/dist/chartjs-adapter-date-fns.bundle.js"></script>
-<script src="https://unpkg.com/chartkick@4.0.1"></script>
+<script src="https://unpkg.com/chartkick@4.0.2"></script>
 <script src="https://unpkg.com/react-chartkick@0.5.1"></script>
 ```
 
@@ -410,7 +410,7 @@ Options are `google`, `highcharts`, and `chartjs`
 For the no package manager install, Chartkick.js is no longer bundled, allowing you to update them independently. Include it manually before React Chartkick.
 
 ```html
-<script src="https://unpkg.com/chartkick@4.0.1"></script>
+<script src="https://unpkg.com/chartkick@4.0.2"></script>
 ````
 
 ## History
