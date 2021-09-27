@@ -29,6 +29,12 @@ class ChartComponent extends React.Component {
     this.newChartType(this.props)
   }
 
+  componentWillUnmount() {
+    if (this.chart) {
+      this.chart.destroy()
+    }
+  }
+
   render() {
     const props = this.props
     const style = {
