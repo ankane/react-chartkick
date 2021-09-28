@@ -1,4 +1,4 @@
-## 0.5.2 (unreleased)
+## 0.5.2 (2021-09-27)
 
 - Destroy chart when component is destroyed
 
