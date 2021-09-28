@@ -1,3 +1,7 @@
+## 0.5.2 (unreleased)
+
+- Destroy chart when component is destroyed
+
 ## 0.5.1 (2021-04-06)
 
 - Fixed `loading` option with empty string
