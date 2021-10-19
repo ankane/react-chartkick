@@ -90,19 +90,21 @@ and
 
 ## Data
 
-Pass data as an array or object
+Data can be an array, object, callback, or URL.
+
+#### Array
 
 ```jsx
 <LineChart data={[["2021-01-01", 2], ["2021-01-02", 3]]} />
 ```
 
-or
+#### Object
 
 ```jsx
 <LineChart data={{"2021-01-01": 2, "2021-01-02": 3}} />
 ```
 
-Data can also be a callback
+#### Callback
 
 ```javascript
 function fetchData(success, fail) {
@@ -117,7 +119,7 @@ and
 <LineChart data={fetchData} />
 ```
 
-### Say Goodbye To Timeouts
+#### URL
 
 Make your pages load super fast and stop worrying about timeouts. Give each chart its own endpoint.
 
