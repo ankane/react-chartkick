@@ -75,13 +75,16 @@ Timeline - *Google Charts*
 
 Multiple series
 
-```jsx
+```javascript
 data = [
   {"name":"Workout", "data": {"2021-01-01": 3, "2021-01-02": 4}},
   {"name":"Call parents", "data": {"2021-01-01": 5, "2021-01-02": 3}}
 ];
+```
 
-// and
+and
+
+```jsx
 <LineChart data={data} />
 ```
 
@@ -101,12 +104,16 @@ or
 
 Data can also be a callback
 
-```jsx
+```javascript
 function fetchData(success, fail) {
   success({"2021-01-01": 2, "2021-01-02": 3})
   // or fail("Data not available")
 }
+```
 
+and
+
+```jsx
 <LineChart data={fetchData} />
 ```
 
