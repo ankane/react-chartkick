@@ -85,6 +85,31 @@ data = [
 <LineChart data={data} />
 ```
 
+## Data
+
+Pass data as an array or object
+
+```jsx
+<LineChart data={[["2021-01-01", 2], ["2021-01-02", 3]]} />
+```
+
+or
+
+```jsx
+<LineChart data={{"2021-01-01": 2, "2021-01-02": 3}} />
+```
+
+Data can also be a callback
+
+```jsx
+function fetchData(success, fail) {
+  success({"2021-01-01": 2, "2021-01-02": 3})
+  // or fail("Data not available")
+}
+
+<LineChart data={fetchData} />
+```
+
 ### Say Goodbye To Timeouts
 
 Make your pages load super fast and stop worrying about timeouts. Give each chart its own endpoint.
@@ -93,7 +118,7 @@ Make your pages load super fast and stop worrying about timeouts. Give each char
 <LineChart data="/stocks" />
 ```
 
-### Options
+## Options
 
 Id, width, and height
 
@@ -259,32 +284,6 @@ To set options for all of your charts, use:
 Chartkick.options = {
   colors: ["#b00", "#666"]
 }
-```
-
-### Data
-
-Pass data as an array or object
-
-```jsx
-<PieChart data={{"Blueberry": 44, "Strawberry": 23}} />
-<PieChart data={[["Blueberry", 44], ["Strawberry", 23]]} />
-```
-
-Times can be a `Date` or a string (strings are parsed)
-
-```jsx
-<LineChart data={[[new Date(), 5], ["2021-01-01 00:00:00 UTC", 7]]} />
-```
-
-Data can also be a callback
-
-```jsx
-function fetchData(success, fail) {
-  success({"Blueberry": 44, "Strawberry": 23})
-  // or fail("Data not available")
-}
-
-<PieChart data={fetchData} />
 ```
 
 ### Multiple Series
