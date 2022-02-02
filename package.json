@@ -30,7 +30,7 @@
     "babel-eslint": "^10.0.2",
     "eslint": "^8.8.0",
     "rollup": "^2.67.0",
-    "rollup-plugin-uglify": "^6.0.2"
+    "rollup-plugin-terser": "^7.0.2"
   },
   "dependencies": {
     "chartkick": "^4.0.0"
