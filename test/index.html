@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>React Chartkick</title>
 
-    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
     <!--
@@ -13,15 +13,16 @@
     <script crossorigin src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
     -->
 
-    <script src="https://unpkg.com/chart.js@3.0.2"></script>
+    <script src="https://unpkg.com/chart.js@3.8.1"></script>
     <script src="https://unpkg.com/chartjs-adapter-date-fns@2.0.0/dist/chartjs-adapter-date-fns.bundle.js"></script>
-    <script src="https://unpkg.com/chartkick@4.0.0"></script>
+    <script src="https://unpkg.com/chartkick@4.2.0"></script>
     <script src="../dist/react-chartkick.js"></script>
   </head>
   <body>
     <div id="root"></div>
     <script type="text/babel">
       const { LineChart, PieChart } = ReactChartkick;
+      const { createRoot } = ReactDOM;
 
       class App extends React.Component {
         constructor() {
@@ -40,15 +41,18 @@
 
         render() {
           return (
-            <div>
-              <LineChart id={this.state.id} innerRef={this.chartRef} data={this.state.data} download={this.state.download} prefix="$" />
-              <PieChart data={this.state.data} />
-            </div>
+            <React.StrictMode>
+              <div>
+                <LineChart id={this.state.id} innerRef={this.chartRef} data={this.state.data} download={this.state.download} prefix="$" />
+                <PieChart data={this.state.data} />
+              </div>
+            </React.StrictMode>
           )
         }
       }
 
-      ReactDOM.render(<App />, document.getElementById("root"))
+      const root = createRoot(document.getElementById("root"));
+      root.render(<App />);
     </script>
   </body>
 </html>
