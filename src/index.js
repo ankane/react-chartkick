@@ -8,7 +8,7 @@ class ChartComponent extends React.Component {
     const data = props.data
     const options = {}
     for (const prop in props) {
-      if (props.hasOwnProperty(prop) && prop !== "data" && prop !== "id" && prop !== "height" && prop !== "width") {
+      if (Object.prototype.hasOwnProperty.call(props, prop) && prop !== "data" && prop !== "id" && prop !== "height" && prop !== "width") {
         options[prop] = props[prop]
       }
     }
@@ -50,12 +50,12 @@ class ChartComponent extends React.Component {
     this.chartId = props.id || this.chartId || ("chart-" + chartId++)
 
     // check if undefined so works with empty string
-    let loading = props.loading !== undefined ? props.loading : "Loading...";
+    let loading = props.loading !== undefined ? props.loading : "Loading..."
 
     // createElement accepts React children,
     // but limit to string since it may be used by Chartkick.js
     if (typeof loading !== "string") {
-      throw new Error("loading must be a string");
+      throw new Error("loading must be a string")
     }
 
     return (
