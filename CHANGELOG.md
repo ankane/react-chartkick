@@ -1,4 +1,4 @@
-## 0.5.3 (unreleased)
+## 0.5.3 (2022-07-24)
 
 - Fixed issue in `React.StrictMode`
 
