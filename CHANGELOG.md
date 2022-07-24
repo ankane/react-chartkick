@@ -1,3 +1,7 @@
+## 0.5.3 (unreleased)
+
+- Fixed issue in `React.StrictMode`
+
 ## 0.5.2 (2021-09-27)
 
 - Destroy chart when component is destroyed
