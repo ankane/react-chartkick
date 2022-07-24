@@ -32,6 +32,7 @@ class ChartComponent extends React.Component {
   componentWillUnmount() {
     if (this.chart) {
       this.chart.destroy()
+      this.chart = undefined
     }
   }
 
