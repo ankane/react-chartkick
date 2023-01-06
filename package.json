@@ -2,8 +2,13 @@
   "name": "react-chartkick",
   "version": "0.5.3",
   "description": "Create beautiful JavaScript charts with one line of React",
+  "type": "module",
   "main": "dist/react-chartkick.js",
   "module": "dist/react-chartkick.esm.js",
+  "exports": {
+    "require": "./dist/react-chartkick.js",
+    "import": "./dist/react-chartkick.esm.js"
+  },
   "scripts": {
     "build": "rollup -c",
     "lint": "eslint src"
