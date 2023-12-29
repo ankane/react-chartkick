@@ -6,7 +6,7 @@ Create beautiful JavaScript charts with one line of React
 
 Supports [Chart.js](https://www.chartjs.org/), [Google Charts](https://developers.google.com/chart/), and [Highcharts](https://www.highcharts.com/)
 
-[![Build Status](https://github.com/ankane/react-chartkick/workflows/build/badge.svg?branch=master)](https://github.com/ankane/react-chartkick/actions)
+[![Build Status](https://github.com/ankane/react-chartkick/actions/workflows/build.yml/badge.svg)](https://github.com/ankane/react-chartkick/actions)
 
 ## Quick Start
 
