@@ -413,16 +413,6 @@ If more than one charting library is loaded, choose between them with:
 
 Options are `google`, `highcharts`, and `chartjs`
 
-## Upgrading
-
-### 0.5.0
-
-For the no package manager install, Chartkick.js is no longer bundled, allowing you to update them independently. Include it manually before React Chartkick.
-
-```html
-<script src="https://unpkg.com/chartkick@4.0.2"></script>
-````
-
 ## History
 
 View the [changelog](https://github.com/ankane/react-chartkick/blob/master/CHANGELOG.md)
