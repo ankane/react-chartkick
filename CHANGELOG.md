@@ -74,3 +74,15 @@
 ## 0.1.3 (2016-10-11)
 
 - Update when new props are received
+
+## 0.1.2 (2016-08-21)
+
+- Added minified version
+
+## 0.1.1 (2016-08-21)
+
+- Fixed line height
+
+## 0.1.0 (2016-08-21)
+
+- First release
