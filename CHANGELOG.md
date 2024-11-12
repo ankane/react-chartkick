@@ -1,3 +1,7 @@
+## 0.5.4 (unreleased)
+
+- Updated Chartkick.js dependency
+
 ## 0.5.3 (2022-07-24)
 
 - Fixed issue in `React.StrictMode`

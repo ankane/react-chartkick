@@ -41,6 +41,6 @@
     "rollup": "^3.9.1"
   },
   "dependencies": {
-    "chartkick": "^4.0.0"
+    "chartkick": ">=4.0.0"
   }
 }
