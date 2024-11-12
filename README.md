@@ -30,7 +30,7 @@ This sets up Chartkick with Chart.js. For other charting libraries, see [detaile
 Line chart
 
 ```jsx
-<LineChart data={{"2021-01-01": 11, "2021-01-02": 6}} />
+<LineChart data={{"2025-01-01": 11, "2025-01-02": 6}} />
 ```
 
 Pie chart
@@ -54,7 +54,7 @@ Bar chart
 Area chart
 
 ```jsx
-<AreaChart data={{"2021-01-01": 11, "2021-01-02": 6}} />
+<AreaChart data={{"2025-01-01": 11, "2025-01-02": 6}} />
 ```
 
 Scatter chart
@@ -79,8 +79,8 @@ Multiple series
 
 ```javascript
 data = [
-  {name: "Workout", data: {"2021-01-01": 3, "2021-01-02": 4}},
-  {name: "Call parents", data: {"2021-01-01": 5, "2021-01-02": 3}}
+  {name: "Workout", data: {"2025-01-01": 3, "2025-01-02": 4}},
+  {name: "Call parents", data: {"2025-01-01": 5, "2025-01-02": 3}}
 ];
 ```
 
@@ -97,20 +97,20 @@ Data can be an array, object, callback, or URL.
 #### Array
 
 ```jsx
-<LineChart data={[["2021-01-01", 2], ["2021-01-02", 3]]} />
+<LineChart data={[["2025-01-01", 2], ["2025-01-02", 3]]} />
 ```
 
 #### Object
 
 ```jsx
-<LineChart data={{"2021-01-01": 2, "2021-01-02": 3}} />
+<LineChart data={{"2025-01-01": 2, "2025-01-02": 3}} />
 ```
 
 #### Callback
 
 ```javascript
 function fetchData(success, fail) {
-  success({"2021-01-01": 2, "2021-01-02": 3})
+  success({"2025-01-01": 2, "2025-01-02": 3})
   // or fail("Data not available")
 }
 ```
@@ -148,7 +148,7 @@ Min and max values
 Min and max for x-axis - *Chart.js*
 
 ```jsx
-<LineChart xmin="2021-01-01" xmax="2022-01-01" />
+<LineChart xmin="2025-01-01" xmax="2025-02-01" />
 ```
 
 Colors
