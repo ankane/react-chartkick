@@ -34,11 +34,11 @@
     "@babel/core": "^7.18.9",
     "@babel/eslint-parser": "^7.18.9",
     "@rollup/plugin-buble": "^1.0.1",
-    "@rollup/plugin-commonjs": "^24.0.0",
+    "@rollup/plugin-commonjs": "^28.0.1",
     "@rollup/plugin-node-resolve": "^15.0.1",
-    "@rollup/plugin-terser": "^0.2.1",
+    "@rollup/plugin-terser": "^0.4.4",
     "eslint": "^9.14.0",
-    "rollup": "^3.9.1"
+    "rollup": "^4.25.0"
   },
   "dependencies": {
     "chartkick": ">=4.0.0"
