@@ -1,4 +1,4 @@
-## 0.5.4 (unreleased)
+## 0.5.4 (2024-11-15)
 
 - Updated Chartkick.js dependency
 
