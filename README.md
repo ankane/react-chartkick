@@ -395,9 +395,9 @@ import 'chartkick/highcharts'
 Include the charting library and the Chartkick library
 
 ```html
-<script src="https://unpkg.com/chart.js@4.2.0/dist/chart.umd.js"></script>
+<script src="https://unpkg.com/chart.js@4.4.6/dist/chart.umd.js"></script>
 <script src="https://unpkg.com/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.js"></script>
-<script src="https://unpkg.com/chartkick@5.0.0"></script>
+<script src="https://unpkg.com/chartkick@5.0.1"></script>
 <script src="https://unpkg.com/react-chartkick@0.5.3"></script>
 ```
 
