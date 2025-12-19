@@ -12,8 +12,7 @@
     }
   },
   "scripts": {
-    "build": "rollup -c",
-    "lint": "eslint src"
+    "build": "rollup -c"
   },
   "license": "MIT",
   "peerDependencies": {
@@ -32,12 +31,10 @@
   ],
   "devDependencies": {
     "@babel/core": "^7.18.9",
-    "@babel/eslint-parser": "^7.18.9",
     "@rollup/plugin-buble": "^1.0.1",
     "@rollup/plugin-commonjs": "^28.0.1",
     "@rollup/plugin-node-resolve": "^15.0.1",
     "@rollup/plugin-terser": "^0.4.4",
-    "eslint": "^9.14.0",
     "rollup": "^4.25.0"
   },
   "dependencies": {
