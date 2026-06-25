@@ -2,7 +2,11 @@
   "name": "react-chartkick",
   "version": "0.5.4",
   "description": "Create beautiful JavaScript charts with one line of React",
+  "homepage": "https://github.com/ankane/react-chartkick",
+  "license": "MIT",
+  "author": "Andrew Kane",
   "type": "module",
+  "files": ["dist"],
   "main": "./dist/react-chartkick.js",
   "module": "./dist/react-chartkick.esm.js",
   "exports": {
@@ -11,24 +15,13 @@
       "import": "./dist/react-chartkick.esm.js"
     }
   },
-  "scripts": {
-    "build": "rollup -c"
+  "dependencies": {
+    "chartkick": ">=4.0.0"
   },
-  "license": "MIT",
   "peerDependencies": {
     "react": "*",
     "react-dom": "*"
   },
-  "authors": [
-    "ankane"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ankane/react-chartkick"
-  },
-  "files": [
-    "dist"
-  ],
   "devDependencies": {
     "@babel/core": "^7.18.9",
     "@rollup/plugin-buble": "^1.0.1",
@@ -37,7 +30,7 @@
     "@rollup/plugin-terser": "^0.4.4",
     "rollup": "^4.25.0"
   },
-  "dependencies": {
-    "chartkick": ">=4.0.0"
+  "scripts": {
+    "build": "rollup -c"
   }
 }

@@ -16,7 +16,7 @@ const banner =
 `/*!
  * React Chartkick v${pkg.version}
  * ${pkg.description}
- * ${pkg.repository.url}
+ * ${pkg.homepage}
  * ${pkg.license} License
  */
 `;
