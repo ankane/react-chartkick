@@ -1,5 +1,7 @@
+.pnpm-store/
 node_modules/
 dist/
 yarn.lock
 package-lock.json
+pnpm-*.yaml
 *.log
