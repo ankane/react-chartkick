@@ -6,7 +6,9 @@
   "license": "MIT",
   "author": "Andrew Kane",
   "type": "module",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "main": "./dist/react-chartkick.js",
   "module": "./dist/react-chartkick.esm.js",
   "exports": {
